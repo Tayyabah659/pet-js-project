@@ -26,17 +26,17 @@ class Pet {
     }
   }
   
-  // Get initial pet details from the user
+ 
   let petName = prompt("What is your pet's name?");
   let petType = prompt("What kind of pet is it? (e.g., dog, cat, dragon)");
   let petAge = parseInt(prompt("How old is your pet?"), 10);
   let petHappiness = parseInt(prompt("How happy is your pet? (0-100)"), 10);
   let petHunger = parseInt(prompt("How hungry is your pet? (0-100)"), 10);
   
-  // Create a new pet with user input
+  
   let pet = new Pet(petName, petType, petAge, petHappiness, petHunger);
   
-  // Interactive pet simulation
+  
   while (true) {
     let action = prompt(`Choose an action:\n1. Feed\n2. Play\n3. Age Pet\n4. Display State\n5. Exit`);
   
@@ -63,5 +63,5 @@ class Pet {
         alert("Invalid choice. Please try again.");
     }
   
-    if (action === "5") break; // Exit the loop if the user chooses to exit
+    if (action === "5") break; 
   }
